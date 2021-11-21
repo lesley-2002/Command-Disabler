@@ -1,200 +1,28 @@
 #Hello this plugin is made by OnlineMetlesley.
-#Autorespawn set to true to enable it, then setup the message and time in seconds.
-#KickonDeath set to true to enable it, then setup the command 
 #If you have any questions or bug reports, please join our discord. https://discord.gg/xAHP8cA
 
-version:
-  #Disallow /version
-  Enabled: true
-  #What Message should the plugin send when the player tried to execute it?
-  BlockMessage: '&cYou are not allowed to use that command!'
-  #Should the plugin save the player who executed the command in the player.yml?
-  SavePlayer: true
-  Broadcast: true
-  BroadcastMessage: '&b%player% tried to use /version'
-  AllowPlayers: true
-  #Enable sound? Get sounds from https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Sound.html
-  Sounds: true
-  Sound: 'ENTITY_VILLAGER_NO'
 
-plugins:
-  #Disallow /plugins
-  Enabled: true
+commands:
   #What Message should the plugin send when the player tried to execute it?
   BlockMessage: '&cYou are not allowed to use that command!'
-  #Should the plugin save the player who executed the command in the player.yml?
-  SavePlayer: true
-  Broadcast: true
-  BroadcastMessage: '&b%player% tried to use /plugins'
+  #Allow players to use the commands below
   AllowPlayers: true
   #Enable sound? Get sounds from https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Sound.html
   Sounds: true
   Sound: 'ENTITY_VILLAGER_NO'
-  
-ver:
-  #Disallow /ver
-  Enabled: true
-  #What Message should the plugin send when the player tried to execute it?
-  BlockMessage: '&cYou are not allowed to use that command!'
-  #Should the plugin save the player who executed the command in the player.yml?
-  SavePlayer: true
-  Broadcast: true
-  BroadcastMessage: '&b%player% tried to use /ver'
-  AllowPlayers: true
-  #Enable sound? Get sounds from https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Sound.html
-  Sounds: true
-  Sound: 'ENTITY_VILLAGER_NO'
-  
-pl:
-  #Disallow /pl
-  Enabled: true
-  #What Message should the plugin send when the player tried to execute it?
-  BlockMessage: '&cYou are not allowed to use that command!'
-  #Should the plugin save the player who executed the command in the player.yml?
-  SavePlayer: true
-  Broadcast: true
-  BroadcastMessage: '&b%player% tried to use /pl'
-  AllowPlayers: true
-  #Enable sound? Get sounds from https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Sound.html
-  Sounds: true
-  Sound: 'ENTITY_VILLAGER_NO'
-
-questionmark:
-  #Disallow /?
-  Enabled: true
-  #What Message should the plugin send when the player tried to execute it?
-  BlockMessage: '&cYou are not allowed to use that command!'
-  #Should the plugin save the player who executed the command in the player.yml?
-  SavePlayer: true
-  Broadcast: true
-  BroadcastMessage: '&b%player% tried to use /?'
-  AllowPlayers: true
-  #Enable sound? Get sounds from https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Sound.html
-  Sounds: true
-  Sound: 'ENTITY_VILLAGER_NO'
-  
-about:
-  #Disallow /about
-  Enabled: true
-  #What Message should the plugin send when the player tried to execute it?
-  BlockMessage: '&cYou are not allowed to use that command!'
-  #Should the plugin save the player who executed the command in the player.yml?
-  SavePlayer: true
-  Broadcast: true
-  BroadcastMessage: '&b%player% tried to use /about'
-  AllowPlayers: true
-  #Enable sound? Get sounds from https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Sound.html
-  Sounds: true
-  Sound: 'ENTITY_VILLAGER_NO'
-
-icanhasbukkit:
-  #Disallow /icanhasbukkit
-  Enabled: true
-  #What Message should the plugin send when the player tried to execute it?
-  BlockMessage: '&cYou are not allowed to use that command!'
-  #Should the plugin save the player who executed the command in the player.yml?
-  SavePlayer: true
-  Broadcast: true
-  BroadcastMessage: '&b%player% tried to use /icanhasbukkit'
-  AllowPlayers: true
-  #Enable sound? Get sounds from https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Sound.html
-  Sounds: true
-  Sound: 'ENTITY_VILLAGER_NO'
-
-bukkitver:
-  #Disallow /bukkit:ver
-  Enabled: true
-  #What Message should the plugin send when the player tried to execute it?
-  BlockMessage: '&cYou are not allowed to use that command!'
-  #Should the plugin save the player who executed the command in the player.yml?
-  SavePlayer: true
-  Broadcast: true
-  BroadcastMessage: '&b%player% tried to use /bukkit:ver'
-  AllowPlayers: true
-  #Enable sound? Get sounds from https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Sound.html
-  Sounds: true
-  Sound: 'ENTITY_VILLAGER_NO'
-
-bukkitplugins:
-  #Disallow /bukkit:plugins
-  Enabled: true
-  #What Message should the plugin send when the player tried to execute it?
-  BlockMessage: '&cYou are not allowed to use that command!'
-  #Should the plugin save the player who executed the command in the player.yml?
-  SavePlayer: true
-  Broadcast: true
-  BroadcastMessage: '&b%player% tried to use /bukkit:plugins'
-  AllowPlayers: true
-  #Enable sound? Get sounds from https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Sound.html
-  Sounds: true
-  Sound: 'ENTITY_VILLAGER_NO'
-
-bukkitversion:
-  #Disallow /bukkit:versions
-  Enabled: true
-  #What Message should the plugin send when the player tried to execute it?
-  BlockMessage: '&cYou are not allowed to use that command!'
-  #Should the plugin save the player who executed the command in the player.yml?
-  SavePlayer: true
-  Broadcast: true
-  BroadcastMessage: '&b%player% tried to use /bukkit:version'
-  AllowPlayers: true
-  #Enable sound? Get sounds from https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Sound.html
-  Sounds: true
-  Sound: 'ENTITY_VILLAGER_NO'
-
-bukkithelp:
-  #Disallow /bukkit:help
-  Enabled: true
-  #What Message should the plugin send when the player tried to execute it?
-  BlockMessage: '&cYou are not allowed to use that command!'
-  #Should the plugin save the player who executed the command in the player.yml?
-  SavePlayer: true
-  Broadcast: true
-  BroadcastMessage: '&b%player% tried to use /bukkit:help'
-  AllowPlayers: true
-  #Enable sound? Get sounds from https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Sound.html
-  Sounds: true
-  Sound: 'ENTITY_VILLAGER_NO'
-
-bukkitabout:
-  #Disallow /bukkit:about
-  Enabled: true
-  #What Message should the plugin send when the player tried to execute it?
-  BlockMessage: '&cYou are not allowed to use that command!'
-  #Should the plugin save the player who executed the command in the player.yml?
-  SavePlayer: true
-  Broadcast: true
-  BroadcastMessage: '&b%player% tried to use /bukkit:about'
-  AllowPlayers: true
-  #Enable sound? Get sounds from https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Sound.html
-  Sounds: true
-  Sound: 'ENTITY_VILLAGER_NO'
-
-bukkitquestionmark:
-  #Disallow /bukkit:?
-  Enabled: true
-  #What Message should the plugin send when the player tried to execute it?
-  BlockMessage: '&cYou are not allowed to use that command!'
-  #Should the plugin save the player who executed the command in the player.yml?
-  SavePlayer: true
-  Broadcast: true
-  BroadcastMessage: '&b%player% tried to use /bukkit:?'
-  AllowPlayers: true
-  #Enable sound? Get sounds from https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Sound.html
-  Sounds: true
-  Sound: 'ENTITY_VILLAGER_NO'
-
-bukkitpl:
-  #Disallow /bukkit:pl
-  Enabled: true
-  #What Message should the plugin send when the player tried to execute it?
-  BlockMessage: '&cYou are not allowed to use that command!'
-  #Should the plugin save the player who executed the command in the player.yml?
-  SavePlayer: true
-  Broadcast: true
-  BroadcastMessage: '&b%player% tried to use /bukkit:pl'
-  AllowPlayers: true
-  #Enable sound? Get sounds from https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Sound.html
-  Sounds: true
-  Sound: 'ENTITY_VILLAGER_NO'
+  configReloaded: '&bThe config.yml has been reloaded!'
+  commands:
+  - pl
+  - plugins
+  - version
+  - ver
+  - '?'
+  - icanhasbukkit
+  - about
+  - 'bukkit:ver'
+  - 'bukkit:plugins'
+  - 'bukkit:versions'
+  - 'bukkit:help'
+  - 'bukkit:about'
+  - 'bukkit:?'
+  - 'bukkit:pl'
