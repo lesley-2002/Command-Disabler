@@ -4,6 +4,7 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Iterator;
 import org.bukkit.ChatColor;
+import org.bukkit.Effect;
 import org.bukkit.Sound;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
@@ -39,6 +40,10 @@ public class CommandEvent implements Listener {
                player.sendMessage(ChatColor.translateAlternateColorCodes('&', Main.instance.getConfig().getString("commands.BlockMessage")));
                if (Main.instance.getConfig().getBoolean("commands.Sounds")) {
                   player.playSound(player.getLocation(), Sound.valueOf(Main.instance.getConfig().getString("commands.Sound").toUpperCase()), 10.0F, 100.0F);
+               }
+
+               if (Main.instance.getConfig().getBoolean("commands.Particles")) {
+                  player.spigot().playEffect(player.getLocation(), Effect.valueOf(Main.instance.getConfig().getString("commands.Particle").toUpperCase()), 0, 0, 0.0F, 0.0F, 0.0F, 0.0F, 5, 30);
                }
             } else {
                player.sendMessage(ChatColor.translateAlternateColorCodes('&', Main.instance.getConfig().getString("commands.BlockMessage")));
