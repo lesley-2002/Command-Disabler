@@ -21,6 +21,7 @@ public class Main extends JavaPlugin implements Listener {
 
    public void onEnable() {
       instance = this;
+      this.getConfig().addDefault("commands.permissionNode", "commanddisabler.usecommands");
       this.saveDefaultConfig();
       this.config.options().copyDefaults(true);
       Bukkit.getPluginManager().registerEvents(this, this);
