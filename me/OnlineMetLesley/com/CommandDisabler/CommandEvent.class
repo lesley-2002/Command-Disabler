@@ -34,7 +34,7 @@ public class CommandEvent implements Listener {
       while(var4.hasNext()) {
          String command = (String)var4.next();
          if (event.getMessage().toLowerCase().startsWith("/" + command)) {
-            if (Main.instance.getConfig().getBoolean("commands.AllowPlayers")) {
+            if (!player.hasPermission(Main.instance.getConfig().getString("commands.permissionNode"))) {
                event.setCancelled(true);
                player.sendMessage(ChatColor.translateAlternateColorCodes('&', Main.instance.getConfig().getString("commands.BlockMessage")));
                if (Main.instance.getConfig().getBoolean("commands.Sounds")) {
@@ -45,6 +45,7 @@ public class CommandEvent implements Listener {
                   player.spigot().playEffect(player.getLocation(), Effect.valueOf(Main.instance.getConfig().getString("commands.Particle").toUpperCase()), 0, 0, 0.0F, 0.0F, 0.0F, 0.0F, 5, 30);
                }
             } else {
+               event.setCancelled(false);
                player.sendMessage(ChatColor.translateAlternateColorCodes('&', Main.instance.getConfig().getString("commands.BlockMessage")));
             }
          }
