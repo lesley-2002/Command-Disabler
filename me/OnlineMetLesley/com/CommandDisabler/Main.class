@@ -1,4 +1,4 @@
-package me.OnlineMetlesley.com.CommandDisabler;
+package me.OnlineMetLesley.com.CommandDisabler;
 
 import java.io.File;
 import org.bukkit.Bukkit;
