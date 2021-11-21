@@ -1,0 +1,58 @@
+package me.OnlineMetlesley.com.CommandDisabler;
+
+import java.io.File;
+import java.io.IOException;
+import org.bukkit.Bukkit;
+import org.bukkit.Server;
+import org.bukkit.configuration.InvalidConfigurationException;
+import org.bukkit.configuration.file.FileConfiguration;
+import org.bukkit.configuration.file.YamlConfiguration;
+import org.bukkit.event.Listener;
+import org.bukkit.plugin.Plugin;
+import org.bukkit.plugin.java.JavaPlugin;
+
+public class Main extends JavaPlugin implements Listener {
+   FileConfiguration config = this.getConfig();
+   public File players;
+   public FileConfiguration customConfig;
+   Server getserver = this.getServer();
+   public static Plugin instance;
+
+   public Plugin getInstance() {
+      return instance;
+   }
+
+   public void onEnable() {
+      this.createCustomConfig();
+      instance = this;
+      this.saveDefaultConfig();
+      this.config.options().copyDefaults(true);
+      Bukkit.getPluginManager().registerEvents(this, this);
+      Bukkit.getServer().getPluginManager().registerEvents(new CommandEvent(), this);
+      new MetricsLite(this);
+   }
+
+   public void onDisable() {
+   }
+
+   public FileConfiguration getCustomConfig() {
+      return this.customConfig;
+   }
+
+   private void createCustomConfig() {
+      this.players = new File(this.getDataFolder(), "players.yml");
+      if (!this.players.exists()) {
+         this.players.getParentFile().mkdirs();
+         this.saveResource("players.yml", false);
+      }
+
+      this.customConfig = new YamlConfiguration();
+
+      try {
+         this.customConfig.load(this.players);
+      } catch (InvalidConfigurationException | IOException var2) {
+         var2.printStackTrace();
+      }
+
+   }
+}
