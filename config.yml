@@ -10,6 +10,8 @@ version:
   BlockMessage: '&cYou are not allowed to use that command!'
   #Should the plugin save the player who executed the command in the player.yml?
   SavePlayer: true
+  Broadcast: true
+  BroadcastMessage: '&b%player% tried to use /version'
 
 plugins:
   #Disallow /plugins
@@ -18,6 +20,18 @@ plugins:
   BlockMessage: '&cYou are not allowed to use that command!'
   #Should the plugin save the player who executed the command in the player.yml?
   SavePlayer: true
+  Broadcast: true
+  BroadcastMessage: '&b%player% tried to use /plugins'
+  
+ver:
+  #Disallow /ver
+  Enabled: true
+  #What Message should the plugin send when the player tried to execute it?
+  BlockMessage: '&cYou are not allowed to use that command!'
+  #Should the plugin save the player who executed the command in the player.yml?
+  SavePlayer: true
+  Broadcast: true
+  BroadcastMessage: '&b%player% tried to use /ver'
   
 pl:
   #Disallow /pl
@@ -26,6 +40,8 @@ pl:
   BlockMessage: '&cYou are not allowed to use that command!'
   #Should the plugin save the player who executed the command in the player.yml?
   SavePlayer: true
+  Broadcast: true
+  BroadcastMessage: '&b%player% tried to use /pl'
 
 questionmark:
   #Disallow /?
@@ -34,6 +50,8 @@ questionmark:
   BlockMessage: '&cYou are not allowed to use that command!'
   #Should the plugin save the player who executed the command in the player.yml?
   SavePlayer: true
+  Broadcast: true
+  BroadcastMessage: '&b%player% tried to use /?'
   
 about:
   #Disallow /about
@@ -42,6 +60,8 @@ about:
   BlockMessage: '&cYou are not allowed to use that command!'
   #Should the plugin save the player who executed the command in the player.yml?
   SavePlayer: true
+  Broadcast: true
+  BroadcastMessage: '&b%player% tried to use /about'
 
 icanhasbukkit:
   #Disallow /icanhasbukkit
@@ -50,6 +70,8 @@ icanhasbukkit:
   BlockMessage: '&cYou are not allowed to use that command!'
   #Should the plugin save the player who executed the command in the player.yml?
   SavePlayer: true
+  Broadcast: true
+  BroadcastMessage: '&b%player% tried to use /icanhasbukkit'
 
 bukkitver:
   #Disallow /bukkit:ver
@@ -58,6 +80,8 @@ bukkitver:
   BlockMessage: '&cYou are not allowed to use that command!'
   #Should the plugin save the player who executed the command in the player.yml?
   SavePlayer: true
+  Broadcast: true
+  BroadcastMessage: '&b%player% tried to use /bukkit:ver'
 
 bukkitplugins:
   #Disallow /bukkit:plugins
@@ -66,14 +90,18 @@ bukkitplugins:
   BlockMessage: '&cYou are not allowed to use that command!'
   #Should the plugin save the player who executed the command in the player.yml?
   SavePlayer: true
+  Broadcast: true
+  BroadcastMessage: '&b%player% tried to use /bukkit:plugins'
 
-bukkitversions:
+bukkitversion:
   #Disallow /bukkit:versions
   Enabled: true
   #What Message should the plugin send when the player tried to execute it?
   BlockMessage: '&cYou are not allowed to use that command!'
   #Should the plugin save the player who executed the command in the player.yml?
   SavePlayer: true
+  Broadcast: true
+  BroadcastMessage: '&b%player% tried to use /bukkit:version'
 
 bukkithelp:
   #Disallow /bukkit:help
@@ -82,6 +110,8 @@ bukkithelp:
   BlockMessage: '&cYou are not allowed to use that command!'
   #Should the plugin save the player who executed the command in the player.yml?
   SavePlayer: true
+  Broadcast: true
+  BroadcastMessage: '&b%player% tried to use /bukkit:help'
 
 bukkitabout:
   #Disallow /bukkit:about
@@ -90,6 +120,8 @@ bukkitabout:
   BlockMessage: '&cYou are not allowed to use that command!'
   #Should the plugin save the player who executed the command in the player.yml?
   SavePlayer: true
+  Broadcast: true
+  BroadcastMessage: '&b%player% tried to use /bukkit:about'
 
 bukkitquestionmark:
   #Disallow /bukkit:?
@@ -98,6 +130,8 @@ bukkitquestionmark:
   BlockMessage: '&cYou are not allowed to use that command!'
   #Should the plugin save the player who executed the command in the player.yml?
   SavePlayer: true
+  Broadcast: true
+  BroadcastMessage: '&b%player% tried to use /bukkit:?'
 
 bukkitpl:
   #Disallow /bukkit:pl
@@ -106,3 +140,5 @@ bukkitpl:
   BlockMessage: '&cYou are not allowed to use that command!'
   #Should the plugin save the player who executed the command in the player.yml?
   SavePlayer: true
+  Broadcast: true
+  BroadcastMessage: '&b%player% tried to use /bukkit:pl'
