@@ -1,4 +1,4 @@
-package me.OnlineMetlesley.com.CommandDisabler;
+package me.OnlineMetLesley.com.CommandDisabler;
 
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
