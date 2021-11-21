@@ -32,78 +32,117 @@ public class CommandEvent implements Listener {
          player.sendMessage(ChatColor.translateAlternateColorCodes('&', Main.instance.getConfig().getString("plugins.BlockMessage").replace("%player%", player.getName())));
          event.setCancelled(true);
          Bukkit.getServer().getConsoleSender().sendMessage(ChatColor.AQUA + player.getName() + ChatColor.RED + " tried to use: " + event.getMessage().toLowerCase());
+         if (Main.instance.getConfig().getBoolean("Broadcast")) {
+            Bukkit.broadcastMessage(Main.instance.getConfig().getString("plugins.BroadcastMessage").replaceAll("%player%", player.getName()));
+         }
       }
 
       if (Main.instance.getConfig().getBoolean("pl.Enabled") && event.getMessage().toLowerCase().startsWith("/pl")) {
          player.sendMessage(ChatColor.translateAlternateColorCodes('&', Main.instance.getConfig().getString("pl.BlockMessage").replace("%player%", player.getName())));
          event.setCancelled(true);
          Bukkit.getServer().getConsoleSender().sendMessage(ChatColor.AQUA + player.getName() + ChatColor.RED + " tried to use: " + event.getMessage().toLowerCase());
+         if (Main.instance.getConfig().getBoolean("Broadcast")) {
+            Bukkit.broadcastMessage(Main.instance.getConfig().getString("pl.BroadcastMessage").replaceAll("%player%", player.getName()));
+         }
       }
 
       if (Main.instance.getConfig().getBoolean("version.Enabled") && event.getMessage().toLowerCase().startsWith("/version")) {
          player.sendMessage(ChatColor.translateAlternateColorCodes('&', Main.instance.getConfig().getString("version.BlockMessage").replace("%player%", player.getName())));
          event.setCancelled(true);
          Bukkit.getServer().getConsoleSender().sendMessage(ChatColor.AQUA + player.getName() + ChatColor.RED + " tried to use: " + event.getMessage().toLowerCase());
+         if (Main.instance.getConfig().getBoolean("Broadcast")) {
+            Bukkit.broadcastMessage(Main.instance.getConfig().getString("version.BroadcastMessage").replace("%player%", player.getName()));
+         }
       }
 
       if (Main.instance.getConfig().getBoolean("questionmark.Enabled") && event.getMessage().toLowerCase().startsWith("/?")) {
          player.sendMessage(ChatColor.translateAlternateColorCodes('&', Main.instance.getConfig().getString(" questionmark.BlockMessage ").replace("%player%", player.getName())));
          event.setCancelled(true);
          Bukkit.getServer().getConsoleSender().sendMessage(ChatColor.AQUA + player.getName() + ChatColor.RED + "tried to use:" + event.getMessage().toLowerCase());
+         if (Main.instance.getConfig().getBoolean("Broadcast")) {
+            Bukkit.broadcastMessage(Main.instance.getConfig().getString("questionmark.BroadcastMessage").replace("%player%", player.getName()));
+         }
       }
 
       if (Main.instance.getConfig().getBoolean("about.Enabled") && event.getMessage().toLowerCase().startsWith("/about")) {
          player.sendMessage(ChatColor.translateAlternateColorCodes('&', Main.instance.getConfig().getString("about.BlockMessage").replace("%player%", player.getName())));
          event.setCancelled(true);
          Bukkit.getServer().getConsoleSender().sendMessage(ChatColor.AQUA + player.getName() + ChatColor.RED + "tried to use:" + event.getMessage().toLowerCase());
+         if (Main.instance.getConfig().getBoolean("Broadcast")) {
+            Bukkit.broadcastMessage(Main.instance.getConfig().getString("about.BroadcastMessage").replace("%player%", player.getName()));
+         }
       }
 
       if (Main.instance.getConfig().getBoolean("icanhasbukkit.Enabled") && event.getMessage().toLowerCase().startsWith("/icanhasbukkit")) {
          player.sendMessage(ChatColor.translateAlternateColorCodes('&', Main.instance.getConfig().getString("icanhasbukkit.BlockMessage").replace("%player%", player.getName())));
          event.setCancelled(true);
          Bukkit.getServer().getConsoleSender().sendMessage(ChatColor.AQUA + player.getName() + ChatColor.RED + " tried to use: " + event.getMessage().toLowerCase());
+         if (Main.instance.getConfig().getBoolean("Broadcast")) {
+            Bukkit.broadcastMessage(Main.instance.getConfig().getString("icanhasbukkit.BroadcastMessage"));
+         }
       }
 
       if (Main.instance.getConfig().getBoolean("ver.Enabled") && event.getMessage().toLowerCase().startsWith("/bukkit:ver")) {
          player.sendMessage(ChatColor.translateAlternateColorCodes('&', Main.instance.getConfig().getString("bukkitver.BlockMessage").replace("%player%", player.getName())));
          event.setCancelled(true);
          Bukkit.getServer().getConsoleSender().sendMessage(ChatColor.AQUA + player.getName() + ChatColor.RED + " tried to use: " + event.getMessage().toLowerCase());
+         if (Main.instance.getConfig().getBoolean("Broadcast")) {
+            Bukkit.broadcastMessage(Main.instance.getConfig().getString("ver.BroadcastMessage").replace("%player%", player.getName()));
+         }
       }
 
       if (Main.instance.getConfig().getBoolean("bukkitplugins.Enabled") && event.getMessage().toLowerCase().startsWith("/bukkit:plugins")) {
          player.sendMessage(ChatColor.translateAlternateColorCodes('&', Main.instance.getConfig().getString("bukkitplugins.BlockMessage").replace("%player%", player.getName())));
          event.setCancelled(true);
          Bukkit.getServer().getConsoleSender().sendMessage(ChatColor.AQUA + player.getName() + ChatColor.RED + " tried to use: " + event.getMessage().toLowerCase());
+         if (Main.instance.getConfig().getBoolean("Broadcast")) {
+            Bukkit.broadcastMessage(Main.instance.getConfig().getString("bukkitplugins.BroadcastMessage").replace("%player%", player.getName()));
+         }
       }
 
       if (Main.instance.getConfig().getBoolean("bukkitversion.Enabled") && event.getMessage().toLowerCase().startsWith("/bukkit:version")) {
          player.sendMessage(ChatColor.translateAlternateColorCodes('&', Main.instance.getConfig().getString("questionmark.BlockMessage").replace("%player%", player.getName())));
          event.setCancelled(true);
          Bukkit.getServer().getConsoleSender().sendMessage(ChatColor.AQUA + player.getName() + ChatColor.RED + " tried to use: " + event.getMessage().toLowerCase());
+         if (Main.instance.getConfig().getBoolean("Broadcast")) {
+            Bukkit.broadcastMessage(Main.instance.getConfig().getString("bukkitversion.BroadcastMessage").replace("%player%", player.getName()));
+         }
       }
 
       if (Main.instance.getConfig().getBoolean("bukkithelp.Enabled") && event.getMessage().toLowerCase().startsWith("/bukkit:help")) {
          player.sendMessage(ChatColor.translateAlternateColorCodes('&', Main.instance.getConfig().getString("bukkithelp.BlockMessage").replace("%player%", player.getName())));
          event.setCancelled(true);
          Bukkit.getServer().getConsoleSender().sendMessage(ChatColor.AQUA + player.getName() + ChatColor.RED + " tried to use: " + event.getMessage().toLowerCase());
+         if (Main.instance.getConfig().getBoolean("Broadcast")) {
+            Bukkit.broadcastMessage(Main.instance.getConfig().getString("bukkithelp.BroadcastMessage").replace("%player%", player.getName()));
+         }
       }
 
       if (Main.instance.getConfig().getBoolean("bukkitabout.Enabled") && event.getMessage().toLowerCase().startsWith("/bukkit:about")) {
          player.sendMessage(ChatColor.translateAlternateColorCodes('&', Main.instance.getConfig().getString("bukkitabout.BlockMessage").replace("%player%", player.getName())));
          event.setCancelled(true);
          Bukkit.getServer().getConsoleSender().sendMessage(ChatColor.AQUA + player.getName() + ChatColor.RED + " tried to use: " + event.getMessage().toLowerCase());
+         if (Main.instance.getConfig().getBoolean("Broadcast")) {
+            Bukkit.broadcastMessage(Main.instance.getConfig().getString("bukkitabout.BroadcastMessage").replace("%player%", player.getName()));
+         }
       }
 
       if (Main.instance.getConfig().getBoolean("bukkitquestionmark.Enabled") && event.getMessage().toLowerCase().startsWith("/bukkit:?")) {
          player.sendMessage(ChatColor.translateAlternateColorCodes('&', Main.instance.getConfig().getString("bukkitquestionmark.BlockMessage").replace("%player%", player.getName())));
          event.setCancelled(true);
          Bukkit.getServer().getConsoleSender().sendMessage(ChatColor.AQUA + player.getName() + ChatColor.RED + " tried to use: " + event.getMessage().toLowerCase());
+         if (Main.instance.getConfig().getBoolean("Broadcast")) {
+            Bukkit.broadcastMessage(Main.instance.getConfig().getString("bukkitquestionmark.BroadcastMessage").replace("%player%", player.getName()));
+         }
       }
 
       if (Main.instance.getConfig().getBoolean("bukkitpl.Enabled") && event.getMessage().toLowerCase().startsWith("/bukkit:pl")) {
          player.sendMessage(ChatColor.translateAlternateColorCodes('&', Main.instance.getConfig().getString("bukkitpl.BlockMessage").replace("%player%", player.getName())));
          event.setCancelled(true);
          Bukkit.getServer().getConsoleSender().sendMessage(ChatColor.AQUA + player.getName() + ChatColor.RED + " tried to use: " + event.getMessage().toLowerCase());
+         if (Main.instance.getConfig().getBoolean("Broadcast")) {
+            Bukkit.broadcastMessage(Main.instance.getConfig().getString("bukkitpl.BroadcastMessage").replace("%player%", player.getName()));
+         }
       }
 
    }
