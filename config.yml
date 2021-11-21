@@ -1,0 +1,108 @@
+#Hello this plugin is made by OnlineMetlesley.
+#Autorespawn set to true to enable it, then setup the message and time in seconds.
+#KickonDeath set to true to enable it, then setup the command 
+#If you have any questions or bug reports, please join our discord. https://discord.gg/xAHP8cA
+
+version:
+  #Disallow /version
+  Enabled: true
+  #What Message should the plugin send when the player tried to execute it?
+  BlockMessage: '&cYou are not allowed to use that command!'
+  #Should the plugin save the player who executed the command in the player.yml?
+  SavePlayer: true
+
+plugins:
+  #Disallow /plugins
+  Enabled: true
+  #What Message should the plugin send when the player tried to execute it?
+  BlockMessage: '&cYou are not allowed to use that command!'
+  #Should the plugin save the player who executed the command in the player.yml?
+  SavePlayer: true
+  
+pl:
+  #Disallow /pl
+  Enabled: true
+  #What Message should the plugin send when the player tried to execute it?
+  BlockMessage: '&cYou are not allowed to use that command!'
+  #Should the plugin save the player who executed the command in the player.yml?
+  SavePlayer: true
+
+questionmark:
+  #Disallow /?
+  Enabled: true
+  #What Message should the plugin send when the player tried to execute it?
+  BlockMessage: '&cYou are not allowed to use that command!'
+  #Should the plugin save the player who executed the command in the player.yml?
+  SavePlayer: true
+  
+about:
+  #Disallow /about
+  Enabled: true
+  #What Message should the plugin send when the player tried to execute it?
+  BlockMessage: '&cYou are not allowed to use that command!'
+  #Should the plugin save the player who executed the command in the player.yml?
+  SavePlayer: true
+
+icanhasbukkit:
+  #Disallow /icanhasbukkit
+  Enabled: true
+  #What Message should the plugin send when the player tried to execute it?
+  BlockMessage: '&cYou are not allowed to use that command!'
+  #Should the plugin save the player who executed the command in the player.yml?
+  SavePlayer: true
+
+bukkitver:
+  #Disallow /bukkit:ver
+  Enabled: true
+  #What Message should the plugin send when the player tried to execute it?
+  BlockMessage: '&cYou are not allowed to use that command!'
+  #Should the plugin save the player who executed the command in the player.yml?
+  SavePlayer: true
+
+bukkitplugins:
+  #Disallow /bukkit:plugins
+  Enabled: true
+  #What Message should the plugin send when the player tried to execute it?
+  BlockMessage: '&cYou are not allowed to use that command!'
+  #Should the plugin save the player who executed the command in the player.yml?
+  SavePlayer: true
+
+bukkitversions:
+  #Disallow /bukkit:versions
+  Enabled: true
+  #What Message should the plugin send when the player tried to execute it?
+  BlockMessage: '&cYou are not allowed to use that command!'
+  #Should the plugin save the player who executed the command in the player.yml?
+  SavePlayer: true
+
+bukkithelp:
+  #Disallow /bukkit:help
+  Enabled: true
+  #What Message should the plugin send when the player tried to execute it?
+  BlockMessage: '&cYou are not allowed to use that command!'
+  #Should the plugin save the player who executed the command in the player.yml?
+  SavePlayer: true
+
+bukkitabout:
+  #Disallow /bukkit:about
+  Enabled: true
+  #What Message should the plugin send when the player tried to execute it?
+  BlockMessage: '&cYou are not allowed to use that command!'
+  #Should the plugin save the player who executed the command in the player.yml?
+  SavePlayer: true
+
+bukkitquestionmark:
+  #Disallow /bukkit:?
+  Enabled: true
+  #What Message should the plugin send when the player tried to execute it?
+  BlockMessage: '&cYou are not allowed to use that command!'
+  #Should the plugin save the player who executed the command in the player.yml?
+  SavePlayer: true
+
+bukkitpl:
+  #Disallow /bukkit:pl
+  Enabled: true
+  #What Message should the plugin send when the player tried to execute it?
+  BlockMessage: '&cYou are not allowed to use that command!'
+  #Should the plugin save the player who executed the command in the player.yml?
+  SavePlayer: true
