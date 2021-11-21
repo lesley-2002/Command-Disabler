@@ -1,6 +1,6 @@
 name: CommandDisabler
 author: OnlineMetLesley
-version: 1.9
+version: 2.0
 main: me.OnlineMetLesley.com.CommandDisabler.Main
 commands:
   commanddisabler:
