@@ -12,6 +12,7 @@ version:
   SavePlayer: true
   Broadcast: true
   BroadcastMessage: '&b%player% tried to use /version'
+  AllowPlayers: true
 
 plugins:
   #Disallow /plugins
@@ -22,6 +23,7 @@ plugins:
   SavePlayer: true
   Broadcast: true
   BroadcastMessage: '&b%player% tried to use /plugins'
+  AllowPlayers: true
   
 ver:
   #Disallow /ver
@@ -32,6 +34,7 @@ ver:
   SavePlayer: true
   Broadcast: true
   BroadcastMessage: '&b%player% tried to use /ver'
+  AllowPlayers: true
   
 pl:
   #Disallow /pl
@@ -42,6 +45,7 @@ pl:
   SavePlayer: true
   Broadcast: true
   BroadcastMessage: '&b%player% tried to use /pl'
+  AllowPlayers: true
 
 questionmark:
   #Disallow /?
@@ -52,6 +56,7 @@ questionmark:
   SavePlayer: true
   Broadcast: true
   BroadcastMessage: '&b%player% tried to use /?'
+  AllowPlayers: true
   
 about:
   #Disallow /about
@@ -62,6 +67,7 @@ about:
   SavePlayer: true
   Broadcast: true
   BroadcastMessage: '&b%player% tried to use /about'
+  AllowPlayers: true
 
 icanhasbukkit:
   #Disallow /icanhasbukkit
@@ -72,6 +78,7 @@ icanhasbukkit:
   SavePlayer: true
   Broadcast: true
   BroadcastMessage: '&b%player% tried to use /icanhasbukkit'
+  AllowPlayers: true
 
 bukkitver:
   #Disallow /bukkit:ver
@@ -82,6 +89,7 @@ bukkitver:
   SavePlayer: true
   Broadcast: true
   BroadcastMessage: '&b%player% tried to use /bukkit:ver'
+  AllowPlayers: true
 
 bukkitplugins:
   #Disallow /bukkit:plugins
@@ -92,6 +100,7 @@ bukkitplugins:
   SavePlayer: true
   Broadcast: true
   BroadcastMessage: '&b%player% tried to use /bukkit:plugins'
+  AllowPlayers: true
 
 bukkitversion:
   #Disallow /bukkit:versions
@@ -102,6 +111,7 @@ bukkitversion:
   SavePlayer: true
   Broadcast: true
   BroadcastMessage: '&b%player% tried to use /bukkit:version'
+  AllowPlayers: true
 
 bukkithelp:
   #Disallow /bukkit:help
@@ -112,6 +122,7 @@ bukkithelp:
   SavePlayer: true
   Broadcast: true
   BroadcastMessage: '&b%player% tried to use /bukkit:help'
+  AllowPlayers: true
 
 bukkitabout:
   #Disallow /bukkit:about
@@ -122,6 +133,7 @@ bukkitabout:
   SavePlayer: true
   Broadcast: true
   BroadcastMessage: '&b%player% tried to use /bukkit:about'
+  AllowPlayers: true
 
 bukkitquestionmark:
   #Disallow /bukkit:?
@@ -132,6 +144,7 @@ bukkitquestionmark:
   SavePlayer: true
   Broadcast: true
   BroadcastMessage: '&b%player% tried to use /bukkit:?'
+  AllowPlayers: true
 
 bukkitpl:
   #Disallow /bukkit:pl
@@ -142,3 +155,4 @@ bukkitpl:
   SavePlayer: true
   Broadcast: true
   BroadcastMessage: '&b%player% tried to use /bukkit:pl'
+  AllowPlayers: true
