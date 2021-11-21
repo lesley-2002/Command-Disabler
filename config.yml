@@ -13,6 +13,9 @@ version:
   Broadcast: true
   BroadcastMessage: '&b%player% tried to use /version'
   AllowPlayers: true
+  #Enable sound? Get sounds from https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Sound.html
+  Sounds: true
+  Sound: 'ENTITY_VILLAGER_NO'
 
 plugins:
   #Disallow /plugins
@@ -24,6 +27,9 @@ plugins:
   Broadcast: true
   BroadcastMessage: '&b%player% tried to use /plugins'
   AllowPlayers: true
+  #Enable sound? Get sounds from https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Sound.html
+  Sounds: true
+  Sound: 'ENTITY_VILLAGER_NO'
   
 ver:
   #Disallow /ver
@@ -35,6 +41,9 @@ ver:
   Broadcast: true
   BroadcastMessage: '&b%player% tried to use /ver'
   AllowPlayers: true
+  #Enable sound? Get sounds from https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Sound.html
+  Sounds: true
+  Sound: 'ENTITY_VILLAGER_NO'
   
 pl:
   #Disallow /pl
@@ -46,6 +55,9 @@ pl:
   Broadcast: true
   BroadcastMessage: '&b%player% tried to use /pl'
   AllowPlayers: true
+  #Enable sound? Get sounds from https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Sound.html
+  Sounds: true
+  Sound: 'ENTITY_VILLAGER_NO'
 
 questionmark:
   #Disallow /?
@@ -57,6 +69,9 @@ questionmark:
   Broadcast: true
   BroadcastMessage: '&b%player% tried to use /?'
   AllowPlayers: true
+  #Enable sound? Get sounds from https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Sound.html
+  Sounds: true
+  Sound: 'ENTITY_VILLAGER_NO'
   
 about:
   #Disallow /about
@@ -68,6 +83,9 @@ about:
   Broadcast: true
   BroadcastMessage: '&b%player% tried to use /about'
   AllowPlayers: true
+  #Enable sound? Get sounds from https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Sound.html
+  Sounds: true
+  Sound: 'ENTITY_VILLAGER_NO'
 
 icanhasbukkit:
   #Disallow /icanhasbukkit
@@ -79,6 +97,9 @@ icanhasbukkit:
   Broadcast: true
   BroadcastMessage: '&b%player% tried to use /icanhasbukkit'
   AllowPlayers: true
+  #Enable sound? Get sounds from https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Sound.html
+  Sounds: true
+  Sound: 'ENTITY_VILLAGER_NO'
 
 bukkitver:
   #Disallow /bukkit:ver
@@ -90,6 +111,9 @@ bukkitver:
   Broadcast: true
   BroadcastMessage: '&b%player% tried to use /bukkit:ver'
   AllowPlayers: true
+  #Enable sound? Get sounds from https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Sound.html
+  Sounds: true
+  Sound: 'ENTITY_VILLAGER_NO'
 
 bukkitplugins:
   #Disallow /bukkit:plugins
@@ -101,6 +125,9 @@ bukkitplugins:
   Broadcast: true
   BroadcastMessage: '&b%player% tried to use /bukkit:plugins'
   AllowPlayers: true
+  #Enable sound? Get sounds from https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Sound.html
+  Sounds: true
+  Sound: 'ENTITY_VILLAGER_NO'
 
 bukkitversion:
   #Disallow /bukkit:versions
@@ -112,6 +139,9 @@ bukkitversion:
   Broadcast: true
   BroadcastMessage: '&b%player% tried to use /bukkit:version'
   AllowPlayers: true
+  #Enable sound? Get sounds from https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Sound.html
+  Sounds: true
+  Sound: 'ENTITY_VILLAGER_NO'
 
 bukkithelp:
   #Disallow /bukkit:help
@@ -123,6 +153,9 @@ bukkithelp:
   Broadcast: true
   BroadcastMessage: '&b%player% tried to use /bukkit:help'
   AllowPlayers: true
+  #Enable sound? Get sounds from https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Sound.html
+  Sounds: true
+  Sound: 'ENTITY_VILLAGER_NO'
 
 bukkitabout:
   #Disallow /bukkit:about
@@ -134,6 +167,9 @@ bukkitabout:
   Broadcast: true
   BroadcastMessage: '&b%player% tried to use /bukkit:about'
   AllowPlayers: true
+  #Enable sound? Get sounds from https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Sound.html
+  Sounds: true
+  Sound: 'ENTITY_VILLAGER_NO'
 
 bukkitquestionmark:
   #Disallow /bukkit:?
@@ -145,6 +181,9 @@ bukkitquestionmark:
   Broadcast: true
   BroadcastMessage: '&b%player% tried to use /bukkit:?'
   AllowPlayers: true
+  #Enable sound? Get sounds from https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Sound.html
+  Sounds: true
+  Sound: 'ENTITY_VILLAGER_NO'
 
 bukkitpl:
   #Disallow /bukkit:pl
@@ -156,3 +195,6 @@ bukkitpl:
   Broadcast: true
   BroadcastMessage: '&b%player% tried to use /bukkit:pl'
   AllowPlayers: true
+  #Enable sound? Get sounds from https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Sound.html
+  Sounds: true
+  Sound: 'ENTITY_VILLAGER_NO'
