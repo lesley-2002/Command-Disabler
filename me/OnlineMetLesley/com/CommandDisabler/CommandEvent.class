@@ -4,6 +4,7 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
+import org.bukkit.Sound;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
@@ -35,6 +36,10 @@ public class CommandEvent implements Listener {
          if (Main.instance.getConfig().getBoolean("Broadcast")) {
             Bukkit.broadcastMessage(Main.instance.getConfig().getString("plugins.BroadcastMessage").replaceAll("%player%", player.getName()));
          }
+
+         if (Main.instance.getConfig().getBoolean("plugins.Sounds")) {
+            player.playSound(player.getLocation(), Sound.valueOf(Main.instance.getConfig().getString("plugins.Sound").toUpperCase()), 10.0F, 100.0F);
+         }
       }
 
       if (Main.instance.getConfig().getBoolean("pl.Enabled") && Main.instance.getConfig().getBoolean("pl.AllowPlayers") && event.getMessage().toLowerCase().startsWith("/pl")) {
@@ -43,6 +48,10 @@ public class CommandEvent implements Listener {
          Bukkit.getServer().getConsoleSender().sendMessage(ChatColor.AQUA + player.getName() + ChatColor.RED + " tried to use: " + event.getMessage().toLowerCase());
          if (Main.instance.getConfig().getBoolean("Broadcast")) {
             Bukkit.broadcastMessage(Main.instance.getConfig().getString("pl.BroadcastMessage").replaceAll("%player%", player.getName()));
+         }
+
+         if (Main.instance.getConfig().getBoolean("pl.Sounds")) {
+            player.playSound(player.getLocation(), Sound.valueOf(Main.instance.getConfig().getString("pl.Sound").toUpperCase()), 10.0F, 100.0F);
          }
       }
 
@@ -53,6 +62,10 @@ public class CommandEvent implements Listener {
          if (Main.instance.getConfig().getBoolean("Broadcast")) {
             Bukkit.broadcastMessage(Main.instance.getConfig().getString("version.BroadcastMessage").replace("%player%", player.getName()));
          }
+
+         if (Main.instance.getConfig().getBoolean("version.Sounds")) {
+            player.playSound(player.getLocation(), Sound.valueOf(Main.instance.getConfig().getString("version.Sound").toUpperCase()), 10.0F, 100.0F);
+         }
       }
 
       if (Main.instance.getConfig().getBoolean("questionmark.Enabled") && Main.instance.getConfig().getBoolean("questionmark.AllowPlayers") && event.getMessage().toLowerCase().startsWith("/?")) {
@@ -61,6 +74,10 @@ public class CommandEvent implements Listener {
          Bukkit.getServer().getConsoleSender().sendMessage(ChatColor.AQUA + player.getName() + ChatColor.RED + "tried to use:" + event.getMessage().toLowerCase());
          if (Main.instance.getConfig().getBoolean("Broadcast")) {
             Bukkit.broadcastMessage(Main.instance.getConfig().getString("questionmark.BroadcastMessage").replace("%player%", player.getName()));
+         }
+
+         if (Main.instance.getConfig().getBoolean("questionmark.Sounds")) {
+            player.playSound(player.getLocation(), Sound.valueOf(Main.instance.getConfig().getString("questionmark.Sound").toUpperCase()), 10.0F, 100.0F);
          }
       }
 
@@ -71,6 +88,10 @@ public class CommandEvent implements Listener {
          if (Main.instance.getConfig().getBoolean("Broadcast")) {
             Bukkit.broadcastMessage(Main.instance.getConfig().getString("about.BroadcastMessage").replace("%player%", player.getName()));
          }
+
+         if (Main.instance.getConfig().getBoolean("about.Sounds")) {
+            player.playSound(player.getLocation(), Sound.valueOf(Main.instance.getConfig().getString("about.Sound").toUpperCase()), 10.0F, 100.0F);
+         }
       }
 
       if (Main.instance.getConfig().getBoolean("icanhasbukkit.Enabled") && Main.instance.getConfig().getBoolean("icanhasbukkit.AllowPlayers") && event.getMessage().toLowerCase().startsWith("/icanhasbukkit")) {
@@ -79,6 +100,10 @@ public class CommandEvent implements Listener {
          Bukkit.getServer().getConsoleSender().sendMessage(ChatColor.AQUA + player.getName() + ChatColor.RED + " tried to use: " + event.getMessage().toLowerCase());
          if (Main.instance.getConfig().getBoolean("Broadcast")) {
             Bukkit.broadcastMessage(Main.instance.getConfig().getString("icanhasbukkit.BroadcastMessage"));
+         }
+
+         if (Main.instance.getConfig().getBoolean("icanhasbukkit.Sounds")) {
+            player.playSound(player.getLocation(), Sound.valueOf(Main.instance.getConfig().getString("icanhasbukkit.Sound").toUpperCase()), 10.0F, 100.0F);
          }
       }
 
@@ -89,6 +114,10 @@ public class CommandEvent implements Listener {
          if (Main.instance.getConfig().getBoolean("Broadcast")) {
             Bukkit.broadcastMessage(Main.instance.getConfig().getString("ver.BroadcastMessage").replace("%player%", player.getName()));
          }
+
+         if (Main.instance.getConfig().getBoolean("ver.Sounds")) {
+            player.playSound(player.getLocation(), Sound.valueOf(Main.instance.getConfig().getString("ver.Sound").toUpperCase()), 10.0F, 100.0F);
+         }
       }
 
       if (Main.instance.getConfig().getBoolean("bukkitplugins.Enabled") && Main.instance.getConfig().getBoolean("bukkitplugins.AllowPlayers") && event.getMessage().toLowerCase().startsWith("/bukkit:plugins")) {
@@ -97,6 +126,10 @@ public class CommandEvent implements Listener {
          Bukkit.getServer().getConsoleSender().sendMessage(ChatColor.AQUA + player.getName() + ChatColor.RED + " tried to use: " + event.getMessage().toLowerCase());
          if (Main.instance.getConfig().getBoolean("Broadcast")) {
             Bukkit.broadcastMessage(Main.instance.getConfig().getString("bukkitplugins.BroadcastMessage").replace("%player%", player.getName()));
+         }
+
+         if (Main.instance.getConfig().getBoolean("bukkitplugins.Sounds")) {
+            player.playSound(player.getLocation(), Sound.valueOf(Main.instance.getConfig().getString("bukkitplugins.Sound").toUpperCase()), 10.0F, 100.0F);
          }
       }
 
@@ -107,6 +140,10 @@ public class CommandEvent implements Listener {
          if (Main.instance.getConfig().getBoolean("Broadcast")) {
             Bukkit.broadcastMessage(Main.instance.getConfig().getString("bukkitversion.BroadcastMessage").replace("%player%", player.getName()));
          }
+
+         if (Main.instance.getConfig().getBoolean("bukkitversion.Sounds")) {
+            player.playSound(player.getLocation(), Sound.valueOf(Main.instance.getConfig().getString("bukkitversion.Sound").toUpperCase()), 10.0F, 100.0F);
+         }
       }
 
       if (Main.instance.getConfig().getBoolean("bukkithelp.Enabled") && Main.instance.getConfig().getBoolean("bukkithelp.AllowPlayers") && event.getMessage().toLowerCase().startsWith("/bukkit:help")) {
@@ -115,6 +152,10 @@ public class CommandEvent implements Listener {
          Bukkit.getServer().getConsoleSender().sendMessage(ChatColor.AQUA + player.getName() + ChatColor.RED + " tried to use: " + event.getMessage().toLowerCase());
          if (Main.instance.getConfig().getBoolean("Broadcast")) {
             Bukkit.broadcastMessage(Main.instance.getConfig().getString("bukkithelp.BroadcastMessage").replace("%player%", player.getName()));
+         }
+
+         if (Main.instance.getConfig().getBoolean("bukkithelp.Sounds")) {
+            player.playSound(player.getLocation(), Sound.valueOf(Main.instance.getConfig().getString("bukkithelp.Sound").toUpperCase()), 10.0F, 100.0F);
          }
       }
 
@@ -125,6 +166,10 @@ public class CommandEvent implements Listener {
          if (Main.instance.getConfig().getBoolean("Broadcast")) {
             Bukkit.broadcastMessage(Main.instance.getConfig().getString("bukkitabout.BroadcastMessage").replace("%player%", player.getName()));
          }
+
+         if (Main.instance.getConfig().getBoolean("bukkitabout.Sounds")) {
+            player.playSound(player.getLocation(), Sound.valueOf(Main.instance.getConfig().getString("bukkitabout.Sound").toUpperCase()), 10.0F, 100.0F);
+         }
       }
 
       if (Main.instance.getConfig().getBoolean("bukkitquestionmark.Enabled") && Main.instance.getConfig().getBoolean("bukkitquestionmark.AllowPlayers") && event.getMessage().toLowerCase().startsWith("/bukkit:?")) {
@@ -134,6 +179,10 @@ public class CommandEvent implements Listener {
          if (Main.instance.getConfig().getBoolean("Broadcast")) {
             Bukkit.broadcastMessage(Main.instance.getConfig().getString("bukkitquestionmark.BroadcastMessage").replace("%player%", player.getName()));
          }
+
+         if (Main.instance.getConfig().getBoolean("bukkitquestionmark.Sounds")) {
+            player.playSound(player.getLocation(), Sound.valueOf(Main.instance.getConfig().getString("bukkitquestionmark.Sound").toUpperCase()), 10.0F, 100.0F);
+         }
       }
 
       if (Main.instance.getConfig().getBoolean("bukkitpl.Enabled") && Main.instance.getConfig().getBoolean("bukkitpl.AllowPlayers") && event.getMessage().toLowerCase().startsWith("/bukkit:pl")) {
@@ -142,6 +191,10 @@ public class CommandEvent implements Listener {
          Bukkit.getServer().getConsoleSender().sendMessage(ChatColor.AQUA + player.getName() + ChatColor.RED + " tried to use: " + event.getMessage().toLowerCase());
          if (Main.instance.getConfig().getBoolean("Broadcast")) {
             Bukkit.broadcastMessage(Main.instance.getConfig().getString("bukkitpl.BroadcastMessage").replace("%player%", player.getName()));
+         }
+
+         if (Main.instance.getConfig().getBoolean("bukkitpl.Sounds")) {
+            player.playSound(player.getLocation(), Sound.valueOf(Main.instance.getConfig().getString("bukkitpl.Sound").toUpperCase()), 10.0F, 100.0F);
          }
       }
 
