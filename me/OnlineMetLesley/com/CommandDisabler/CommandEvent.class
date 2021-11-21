@@ -1,4 +1,4 @@
-package me.OnlineMetlesley.com.CommandDisabler;
+package me.OnlineMetLesley.com.CommandDisabler;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -14,7 +14,6 @@ import org.bukkit.plugin.Plugin;
 
 public class CommandEvent implements Listener {
    public Plugin instance;
-   private Main players;
 
    public void function() {
       Main plugin = (Main)Main.instance;
