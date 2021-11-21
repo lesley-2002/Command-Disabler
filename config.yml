@@ -6,7 +6,7 @@ commands:
   #What Message should the plugin send when the player tried to execute it?
   BlockMessage: '&cYou are not allowed to use that command!'
   #Allow players to use the commands below
-  AllowPlayers: true
+  permissionNode: "commanddisabler.usecommands"
   #Enable sound? Get sounds from https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Sound.html
   Sounds: true
   Sound: 'ENTITY_VILLAGER_NO'
